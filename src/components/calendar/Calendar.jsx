@@ -16,7 +16,7 @@ export default function Calendar({ currentDate, setCurrentDate }) {
 
   const monthKey = `${currentDate.getFullYear()}-${currentDate.getMonth() + 1}`;
 
-  // Load existing start/end for this month safely
+
   useEffect(() => {
     const { start, end } = loadRange(monthKey);
     if (start) setStart(start);
