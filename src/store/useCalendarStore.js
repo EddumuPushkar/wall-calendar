@@ -3,7 +3,7 @@ import { create } from "zustand";
 const useCalendarStore = create((set) => ({
   selectedStart: null,
   selectedEnd: null,
-  notes: {}, // { "2026-4": "note text" }
+  notes: {}, 
 
   // Select start date
   setStart: (date) => {
