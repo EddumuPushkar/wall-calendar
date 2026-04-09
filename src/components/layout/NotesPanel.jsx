@@ -7,11 +7,11 @@ export default function NotesPanel({ currentDate }) {
 
   const [text, setText] = useState("");
 
-  // Load existing note when month changes
+
   useEffect(() => {
     const savedText = loadMonthNote(monthKey);
     setText(savedText);
-  }, [currentDate]); // re-run when month changes
+  }, [currentDate]); 
 
   const handleSave = () => {
     addMonthNote(monthKey, text);
